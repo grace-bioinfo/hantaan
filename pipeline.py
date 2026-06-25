@@ -31,4 +31,4 @@ with open ("hantaan_s.fasta", "w") as h:
 
 print("Sequence saved !!!")
 
-# now we search and fetch the other kind of hanta virus; sin nombre
+# now we search and fetch the other kind of hanta virus; sin nombre virus
