@@ -26,7 +26,7 @@ sequence = fetch_handle.read()
 fetch_handle.close()
 print(sequence[:500])
 
-with open ("hantaan_s.fasta", "w") as h:
+with open("hantaan_s.fasta", "w") as h:
     h.write(sequence)
 
 print("Sequence saved !!!")
@@ -45,6 +45,7 @@ search_handle.close()
 seq_id = search_results["IdList"][0]
 fetch_handle= Entrez.efetch(
     db="nucleotide",
+    id=seq_id,
     rettype="fasta",
     retmode="text"
 )
